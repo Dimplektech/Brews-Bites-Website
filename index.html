@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brews & Bites Cafe - Your cozy spot for great coffee and delicious food.">
+    <meta name="keywords" content="Cafe, Coffee, Pastries, Sandwiches, Food">
+    <meta name="author" content="Brews & Bites Cafe">
+    <title>Brews & Bites Cafe</title>
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- This is the header section of the page -->
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>
+                        
+                        <img src="images/cafe-icon.png" alt="Cafe Logo" style="height:35px; width:35px; vertical-align: middle;" >
+                        Brews & Bites
+                    </h1>
+                </a>
+            </div>
+            <nav>
+                <!-- This is the checkbox for the mobile menu
+                It is hidden but used to toggle the menu -->
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    
+                    <li><a href="index.html#contact">Contact</a></li>
+                    
+                    <li><a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+               
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                
+                <h2>Welcome to Brews & Bites Cafe</h2>
+                <p>Delicious coffee and fresh bites in a cozy atmosphere</p>
+                <a href="menu.html" class="btn">Explore Menu</a>
+            </div>
+        </section>
+        <section class="weather-suggestions">
+             <div class="container">
+                <h2>Personalized Drink Suggestions</h2>
+                <p>Based on your local weather conditions</p>
+                <div id="weather-suggestion" class="suggestion-container">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading personalized recommendations...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2>Our Featured Items</h2>
+                <div class="featured-items">
+                    <div class="item">
+                        <img src="images/special-coffee.jpg" alt="Specialty Coffee" width="300" height="200" loading="lazy">
+                        <h3>Specialty Coffee</h3>
+                        <p>Crafted with premium beans</p>
+                        <a href="menu.html#coffee" class="explore-btn">Explore More</a>
+                    </div>
+                    <div class="item">
+                        <img src="images/pastry.jpg" alt="Fresh Pastries" width="300" height="200" loading="lazy">
+                        <h3>Fresh Pastries</h3>
+                        <p>Baked daily in our kitchen</p>
+                        <a href="menu.html#pastries" class="explore-btn">Explore More</a>
+                    </div>
+                    <div class="item">
+                        <img src="images/sandwich.jpg" alt="Gourmet Sandwiches" width="300" height="200" loading="lazy">
+                        <h3>Gourmet Sandwiches</h3>
+                        <p>Made with local ingredients</p>
+                        <a href="menu.html#sandwiches" class="explore-btn">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brews & Bites Cafe</h3>
+                    <p>Your cozy spot for great coffee and delicious food.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 7am - 8pm</p>
+                    <p>Weekends: 8am - 9pm</p>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h3>Contact</h3>
+                    <p>123 Coffee Lane</p>
+                    <p>Foodville, FV 98765</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Brews & Bites Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    
+    
+</body>
+</html>

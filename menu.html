@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Brews & Bites Cafe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>
+                            <img src="images/cafe-icon.png" alt="Cafe Logo" style="height:35px; width:35px; vertical-align: middle;">
+                            Brews & Bites
+                        </h1>
+                    </a>
+                </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <span class="cart-count">0</span>
+                    </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="menu-page">
+        <section class="menu-hero">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <p>Quality ingredients, crafted with care</p>
+            </div>
+        </section>
+        
+
+        <div class="menu-nav">
+            <div class="container">
+                <ul class="menu-tabs">
+                    <li><a href="#coffee" class="active">Coffee</a></li>
+                    <li><a href="#tea">Tea</a></li>
+                    <li><a href="#pastries">Pastries</a></li>
+                    <li><a href="#sandwiches">Sandwiches</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li>
+                        <div class="container">
+                            <div class="search-container">
+                                <input type="text" placeholder="Search for your favorite item..." id="menu-search-input" style="background-color: #f3eae7;">
+                                <button id="search-button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+            </div>
+        </div>
+        <div class="menu-search">
+             <div id ="search-results" class="search-results hidden">
+                
+                <div class="menu-items" id="search-results-items">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+                <button id="clear-search" class="btn">Back to Menu</button>
+            </div>
+           
+        </div>
+
+        <section id="coffee" class="menu-section">
+            <div class="container">
+                <h3>Coffee</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/menu-hero.jpg" alt="Espresso" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-info">
+                                <h4>Espresso</h4>
+                                <p>Our signature blend, rich and aromatic</p>
+                            </div>
+                            <div class="menu-item-price">
+                                <span>£3.50</span>
+                                <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/cappiccino.jpg" alt="Cappuccino" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Cappuccino</h4>
+                            <p>Equal parts espresso, steamed milk, and foam</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/latte.jpg" alt="Latte" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Latte</h4>
+                            <p>Espresso with steamed milk and a light layer of foam</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/cafe-mocha.jpg" alt="Mocha" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Mocha</h4>
+                            <p>Espresso with chocolate, steamed milk, and whipped cream</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.75</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/iced-coffee.jpg" alt="Iced Coffee" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Cold Brew</h4>
+                            <p>Slow-steeped for 12 hours for a smooth, rich flavor</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/americano.jpg" alt="Americano" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Americano</h4>
+                            <p>Slow-steeped for 12 hours for a smooth, rich flavor</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/hot-chocolate.jpg" alt="Hot Chocolate" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Hot Chocolate</h4>
+                            <p>Rich chocolate with steamed milk, whipped cream and marshmallows</p>
+                            
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£5.30</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/coffee/flat-white.jpg" alt="Flat white" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Flat White</h4>
+                            <p>Rich espresso with velvety steamed milk</p>
+                                                       
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£5.30</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tea" class="menu-section">
+            <div class="container">
+                <h3>Tea</h3>
+                <div class="menu-items">
+                    
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/tea/earl-gray.jpg" alt="Earl-gray" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Earl Grey</h4>
+                            <p>Black tea infused with bergamot oil</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/tea/green-tea.jpg" alt="Green Tea" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Green Tea</h4>
+                            <p>Delicate Japanese green tea leaves</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/tea/chai-latte.jpg" alt="Chai Latte" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Chai Latte</h4>
+                            <p>Spiced black tea with steamed milk</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/tea/chamomile.jpg" alt="Chamomile" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Chamomile</h4>
+                            <p>Soothing herbal tea with honey</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.00</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/tea/spiced-tea.jpg" alt="Spiced Tea" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Spiced Tea</h4>
+                            <p>Soothing herbal tea with honey</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.00</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/tea/iced-tea.jpg" alt="Iced Tea" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Iced Tea</h4>
+                            <p>Soothing herbal tea with honey</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.00</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pastries" class="menu-section">
+            <div class="container">
+                <h3>Pastries</h3>
+                <div class="menu-items">
+
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                          <img src="images/pastries/croissant.jpg" alt="Croissant" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Croissant</h4>
+                            <p>Buttery, flaky French pastry</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/pastries/blueBerryMuffin.jpg" alt="Blueberyy Muffin" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Blueberry Muffin</h4>
+                            <p>Moist muffin packed with fresh blueberries</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/pastries/cinnamon-rolls.jpg" alt="Cinnamon-rolls" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Cinnamon Roll</h4>
+                            <p>Warm roll with cinnamon swirl and cream cheese frosting</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£4.00</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/pastries/scones.jpg" alt="Scones" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Scone</h4>
+                            <p>Traditional scone with seasonal berries</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£3.75</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sandwiches" class="menu-section">
+            <div class="container">
+                <h3>Sandwiches</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/sandwiches/avocado-toast.jpg" alt="Avacado Toast" loading="lazy">
+                       </div>
+                        <div class="menu-item-info">
+                            <h4>Avocado Toast</h4>
+                            <p>Whole grain toast with smashed avocado, sea salt, and red pepper flakes</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£7.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/sandwiches/pasta.jpg" alt="Pasta" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Pasta</h4>
+                            <p>Fresh pasta with seasonal vegetables and a light sauce</p>
+                            
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£8.95</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/sandwiches/cheese-Panini.jpg" alt="Caprese Panini" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Caprese Panini</h4>
+                            <p>Fresh mozzarella, tomato, basil, and balsamic glaze</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£8.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/sandwiches/chicken-pesto-wrap.jpg" alt="Espresso" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Chicken Pesto Wrap</h4>
+                            <p>Grilled chicken, pesto, roasted red peppers, and spinach in a whole wheat wrap</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£9.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+            <div class="container">
+                <h3>Desserts</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/desserts/cookies.jpg" alt="Chocolate Chip Cookie" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Chocolate Chip Cookie</h4>
+                            <p>Warm cookie with melty chocolate chunks</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£2.75</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/desserts/cheese-cake-1.jpg" alt="Cheesecake" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>New York Cheesecake</h4>
+                            <p>Creamy cheesecake with graham cracker crust</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£5.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/desserts/tiramisu.jpg" alt="Tiramisu" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Tiramisu</h4>
+                            <p>Italian dessert with coffee-soaked ladyfingers and mascarpone</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£5.95</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/desserts/fruit-tart.jpg" alt="Fruit Tart" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Seasonal Fruit Tart</h4>
+                            <p>Buttery tart shell filled with pastry cream and fresh seasonal fruit</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>£6.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brews & Bites Cafe</h3>
+                    <p>Your cozy spot for great coffee and delicious food.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 7am - 8pm</p>
+                    <p>Weekends: 8am - 9pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>123 Coffee Lane</p>
+                    <p>Foodville, FV 98765</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Brews & Bites Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/theme-toggle.js"></script>
+</body>
+</html>

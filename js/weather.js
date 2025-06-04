@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded',function(){
                 <h4>Our Classic Recommendations</h4>
                 <div class="suggestion-items">
                     <div class="suggestion-item">
-                        <img src="images/coffee/latte.jpg" alt="Latte">
+                        <img src="assets/images/coffee/latte.jpg" alt="Latte">
                         <span>Latte</span>
                     </div>
                     <div class="suggestion-item">
-                        <img src="images/tea/chai-latte.jpg" alt="Chai Latte">
+                        <img src="assets/images/tea/chai-latte.jpg" alt="Chai Latte">
                         <span>Chai Latte</span>
                     </div>
                 </div>
@@ -200,23 +200,23 @@ document.addEventListener('DOMContentLoaded',function(){
         //Hot Weather suggestions
         if(temp>25){
             return [
-                {name:"Iced Coffee",image : "images/coffee/iced-coffee.jpg", description: "A refreshing iced coffee to cool you down." },
-                {name:"Iced Tea",image:"images/tea/iced-tea.jpg", description: "A chilled iced tea with a hint of lemon."},
+                {name:"Iced Coffee",image : "assets/images/coffee/iced-coffee.jpg", description: "A refreshing iced coffee to cool you down." },
+                {name:"Iced Tea",image:"assets/images/tea/iced-tea.jpg", description: "A chilled iced tea with a hint of lemon."},
             ]
         }
 
         // Cold Weather Suggestions
         if(temp<15){
             return [
-                {name:"Hot Chocolate", image:"images/coffee/hot-chocolate.jpg", description: "A warm and comforting hot chocolate."},
-                {name:"Spiced Tea", image:"images/tea/spiced-tea.jpg", description: "A spiced tea to warm you up."},
+                {name:"Hot Chocolate", image:"assets/images/coffee/hot-chocolate.jpg", description: "A warm and comforting hot chocolate."},
+                {name:"Spiced Tea", image:"assets/images/tea/spiced-tea.jpg", description: "A spiced tea to warm you up."},
             ]
         }
         //Rainy Weather Suggestions
         if(weatherCode >= 51 && weatherCode <= 82){
             return [
-                {name:"Cappuccino", image:"images/coffee/cappuccino.jpg", description: "A rich cappuccino to enjoy while listening to the rain."},
-                {name:"Earl Grey", image:"images/tea/earl-grey.jpg", description: "A classic Earl Grey tea with bergamot."},
+                {name:"Cappuccino", image:"assets/images/coffee/cappuccino.jpg", description: "A rich cappuccino to enjoy while listening to the rain."},
+                {name:"Earl Grey", image:"assets/images/tea/earl-grey.jpg", description: "A classic Earl Grey tea with bergamot."},
             ]
         }
 
@@ -226,13 +226,13 @@ document.addEventListener('DOMContentLoaded',function(){
                 return [
                     { 
                         name: 'Latte', 
-                        image: 'images/special-coffee.jpg',
+                        image: 'assets/images/special-coffee.jpg',
                         description: 'A refreshing latte to enjoy in the sun.'
 
                     },
                     { 
                         name: 'Green Tea', 
-                        image: 'images/pastry.jpg',
+                        image: 'assets/images/pastry.jpg',
                         description: 'A light green tea to keep you cool.'
                     }
                 ];
@@ -240,12 +240,12 @@ document.addEventListener('DOMContentLoaded',function(){
                 return [
                     { 
                         name: 'Espresso', 
-                        image: 'images/special-coffee.jpg',
+                        image: 'assets/images/special-coffee.jpg',
                         description: 'A strong espresso to warm you up at night.'
                     },
                     { 
                         name: 'Chamomile', 
-                        image: 'images/pastry.jpg' ,
+                        image: 'assets/images/pastry.jpg' ,
                         description: 'A calming chamomile tea to relax before bed.'
                     }
                 ];
@@ -257,13 +257,13 @@ document.addEventListener('DOMContentLoaded',function(){
             return [
                 { 
                     name: 'Mocha', 
-                    image: 'images/coffee/cafe-mocha.jpg',
+                    image: 'assets/images/coffee/cafe-mocha.jpg',
                     description: 'A rich mocha to enjoy any time of day.'
 
                 },
                 { 
                     name: 'Green Tea', 
-                    image: 'images/tea/green-tea.jpg',
+                    image: 'assets/images/tea/green-tea.jpg',
                     description: 'A soothing green tea to refresh you.'
                 }
             ];
@@ -276,12 +276,12 @@ document.addEventListener('DOMContentLoaded',function(){
                 <h4>Our Top Recommendations</h4>
                 <div class="suggestion-items">
                     <div class="suggestion-item">
-                        <img src="images/coffee/latte.jpg" alt="Latte">
+                        <img src="assets/images/coffee/latte.jpg" alt="Latte">
                         <span>Latte</span>
                         <p> Experience the creamy delight of our classic latte.</p>
                     </div>
                     <div class="suggestion-item">
-                        <img src="images/coffe/cafe-mocha" alt="Mocha">
+                        <img src="assets/images/coffe/cafe-mocha" alt="Mocha">
                         <span>Mocha</span>
                         <p> Indulge in the rich chocolatey goodness of our mocha.</p>
                         <a href="menu.html" class="order-button">

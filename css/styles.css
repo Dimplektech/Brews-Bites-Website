@@ -157,7 +157,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cafe-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/cafe-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -344,7 +344,7 @@ footer {
     background-color: var(--background-color);
 }
 .menu-hero {
-   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/menu-hero.jpg');
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/menu-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;

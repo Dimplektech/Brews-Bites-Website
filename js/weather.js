@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded',function(){
                         errorMsg = "An unknown error occurred. Using default recommendations.";
                         weatherContainer.innerHTML = `<p class="error-message">${errorMsg}</p>`;
                         setTimeout(() => {
-                            showDefaultRecomendations(); 
+                            showDefaultRecommendations(); 
                         }, 1500);
                  }    
                 },
